@@ -1,0 +1,76 @@
+/*** Classes ***/
+.vertical-align {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.colored-background {
+  background-image: linear-gradient(
+    /* to bottom, */ $color_dd4b25,
+    $color_006db4,
+    $color_ecc50b
+  );
+  color: transparent;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -ms-background-clip: text;
+  -o-background-clip: text;
+  background-clip: text;
+  background-position: center center;
+}
+
+.toggle-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $background_menu;
+  opacity: 0.8;
+  z-index: 3;
+}
+
+.website-name {
+  text-transform: capitalize;
+}
+
+.nth-of-type-odd {
+  background-color: $background_color__;
+}
+
+.nth-of-type-even{
+  background-color: inherit;
+}
+
+.subtitle {
+  max-width: 540px;
+}
+
+.arrow {
+  position: fixed;
+  right: 7.5px;
+  bottom: 15px;
+  font-size: 2.5rem;
+  opacity: 0;
+  transition: 0.2s ease-in;
+  transform: scale(1);
+}
+
+.arrow:hover {
+  color: $color__;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.arrow.angle-up {
+  opacity: 0.8;
+  z-index: 4;
+}
+
+.link {
+  color: $color_005fb6;
+  text-transform: capitalize;
+  text-decoration: underline;
+}
+
+
